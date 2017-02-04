@@ -85,22 +85,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-
+h1 {
+  color: $grey-color;
+  line-height: $base-line-height;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: $second-font-family;
+}
 
 /**
  * Links
  */
 a {
-  color: $brand-color;
-  text-decoration: none;
-
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
+  color: #888;
+  text-decoration: underline;
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+
   }
 }
 

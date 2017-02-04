@@ -1,8 +1,8 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+
+    <span><a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>&nbsp;/&nbsp;<a href="mailto:{{ site.email }}?Subject=Hello">{{ site.email }}</a></span>
 
     <nav class="site-nav">
       <span class="menu-icon">
@@ -16,12 +16,13 @@
       <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.title %}
+          <a class="page-link" href="#case-studies">Case Studies</a>
           <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           {% endif %}
         {% endfor %}
       </div>
     </nav>
 
-  </div>
+
 
 </header>
