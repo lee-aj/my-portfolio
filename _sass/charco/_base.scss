@@ -110,18 +110,21 @@ h4 {
   font-size: 14px;
   font-family: $second-font-family;
   font-weight: 300;
+  margin-bottom: $spacing-unit / 4;
 }
 
 /**
  * Links
  */
 a {
-  color: #888;
-  text-decoration: underline;
-
+  color: $brand-color;
+  text-decoration: none;
+  box-shadow: 0 2px 0 0 #f8bdb9;
+  transition: box-shadow .2s cubic-bezier(.215,.61,.355,1),-webkit-box-shadow .2s cubic-bezier(.215,.61,.355,1);
   &:hover {
     color: $text-color;
-
+    box-shadow: 0 1px 0 0 $text-color;
+    transition: box-shadow .2s cubic-bezier(.215,.61,.355,1),-webkit-box-shadow .2s cubic-bezier(.215,.61,.355,1);
   }
 }
 

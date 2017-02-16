@@ -18,7 +18,7 @@ layout: default
         <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
         <div class="post-image"></div>
         <div class="numbering"><h4>0{{ post.number }}.</h4></div>
-        <div  class="labels"><h4 class="category">{{ post.categories }}</h4></div>
+        <div  class="labels"><h4 class="category">{{ post.categories | escape }}</h4></div>
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>

@@ -4,7 +4,7 @@
 .site-header {
   font-family: $second-font-family;
   color: $grey-color;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   position: fixed;
   padding-top: $spacing-unit / 2;
@@ -37,7 +37,7 @@
     color: $grey-color;
     line-height: $base-line-height;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
     margin-right: $spacing-unit;
     // Gaps between nav items, but not on the last one
     // &:not(:last-child) {
@@ -224,20 +224,18 @@
   color: #333;
   text-decoration: none;
   margin-bottom: $spacing-unit;
-  width: 100%;
   float: left;
+  box-shadow: none;
 }
 
 .numbering {
   margin-top: $spacing-unit / 2;
-  margin-bottom: $spacing-unit / 2;
   width: 10%;
   float: left;
 }
 
 .labels {
   margin-top: $spacing-unit / 2;
-  margin-bottom: $spacing-unit / 2;
   width: 90%;
   float: left;
 }
@@ -250,11 +248,7 @@
   float: left;
 }
 
-.case-study:nth-child(1){
-  width: 100%;
-}
-
-.case-study:nth-child(2){
+.case-study:nth-child(even){
   width: 48%;
   margin-right: 4%;
   .post-image{
@@ -266,7 +260,7 @@
     }
 }
 
-.case-study:nth-child(3){
+.case-study:nth-child(odd){
   width: 48%;
   .post-image{
     height: 300px;
@@ -275,6 +269,10 @@
       width: 100%;
       margin: 0;
     }
+}
+
+.case-study:nth-child(1){
+  width: 100%;
 }
 
 
