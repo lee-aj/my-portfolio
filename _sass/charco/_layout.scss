@@ -163,8 +163,26 @@
  * Home
  */
 .intro {
-  margin: 200px 0 200px 0;
+  margin: 260px 0 300px 0;
   max-width: 550px;
+  line-height: 1.7;
+}
+
+// .tag {
+//   font-size: 15px;
+//   font-family: $second-font-family;
+//   font-weight: $second-font-weight;
+//   color: $grey-color;
+//   margin-bottom: 240px;
+// }
+
+@include media-query($on-palm) {
+  .intro {
+    margin: 120px 0 40px 0;
+  }
+  .tag {
+    margin-bottom: 160px;
+  }
 }
 
 /**
@@ -176,6 +194,7 @@
 
 .page-heading {
   font-size: 16px;
+  padding-top: $spacing-unit * 2;
 }
 
 .post-list {
