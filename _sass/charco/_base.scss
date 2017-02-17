@@ -23,7 +23,6 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
-  background: #fafafa;
 }
 
 
@@ -86,15 +85,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-h1 {
+h2 {
   color: $grey-color;
   line-height: $base-line-height;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 300;
   font-family: $second-font-family;
 }
 
-h2 {
+h1 {
   font-size: 24px;
   font-weight: 300;
 }

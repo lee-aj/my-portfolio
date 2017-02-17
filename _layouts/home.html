@@ -8,7 +8,7 @@ layout: default
 
   <!-- <p class="tag">What I do: UI / UX / Information Architecture / Design Systems / Prototyping / Mobile / and more...</p> -->
 
-  <h1 class="page-heading" id="case-studies">/Case Studies</h1>
+  <h2 class="page-heading" id="case-studies">/Case Studies</h2>
 
   {{ content }}
 
@@ -17,11 +17,18 @@ layout: default
       <li class="case-study">
         <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
         <div class="post-image"></div>
-        <div class="numbering"><h4>0{{ post.number }}.</h4></div>
-        <div  class="labels"><h4 class="category">{{ post.categories | escape }}</h4></div>
-        <h2>
+        <div class=labeling>
+          <div class="number-left">
+            <div class="number">{{ post.number }}</div>
+          </div>
+          <div class="labels-right">
+            <div class="case-study-time">{{ post.time }}</div>
+            <div class="post-type">{{ post.type }}</div>
+          </div>
+        </div>
+        <h1>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
+        </h1>
       </li>
     {% endfor %}
   </ul>
