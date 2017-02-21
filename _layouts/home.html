@@ -4,22 +4,35 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading" id="case-studies">/CASE STUDIES</h1>
+  <h3 class="intro">Hello, I’m Andrew, a Product Designer from the SF Bay Area. I’m currently simplifying the home design experience at <a href="www.houzz.com">Houzz</a>.</h3>
+
+  <!-- <p class="tag">What I do: UI / UX / Information Architecture / Design Systems / Prototyping / Mobile / and more...</p> -->
+
+  <h2 class="page-heading" id="case-studies">Case Studies</h2>
 
   {{ content }}
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+      <li class="case-study">
+        <div class="post-image"></div>
+        <div class="labeling">
+          <div class="number float-left">{{ post.number }}</div>
+          <div class="float-right">{{ post.time }}</div>
+          <div class="post-type float-right">{{ post.type }}</div>
+        </div>
+        <h1>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
+        </h1>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <h2 class="page-heading" id="about">About</h2>
+  <div class="about">
+    <p>{{ site.title | escape }}</p>
+    <p><a href="mailto:{{ site.email }}?Subject=Hello">{{ site.email | escape }}</a></p>
+    <p><a>CV</a></p>
+  </div>
 
 </div>

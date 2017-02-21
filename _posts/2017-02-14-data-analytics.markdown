@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2017-02-02 23:08:39 -0800
-type: jekyll update
-number: 5
-time: "2014"
+title:  "Houzz Data Analytics Dashboard"
+date:   2017-02-16 13:42:39 -0800
+type: "Internal"
+number: 3
+time: "Ongoing"
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
