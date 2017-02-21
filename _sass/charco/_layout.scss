@@ -191,64 +191,6 @@
   float: left;
 }
 
-.post-image {
-  background: #f4f4f4;
-}
-
-@include media-query($on-palm) {
-  .intro {
-    margin: 120px 0 40px 0;
-  }
-}
-
-.post-link {
-  font-size: 24px;
-  color: #333;
-  text-decoration: none;
-  box-shadow: none;
-}
-
-.labeling {
-  color: $grey-color;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: $second-font-family;
-  font-weight: 300;
-  padding-top: $spacing-unit / 8 * 3;
-  display: inline-block;
-  width: 100%;
-}
-
-
-
-.number-left {
-  width: 10%;
-  // float: left;
-}
-
-.number::before {
-  content: "0";
-}
-
-.number::after {
-  content: "."
-}
-
-.labels-right {
-  width: 90%;
-}
-
-.float-right {
-  float: right;
-}
-
-.float-left {
-  float: left;
-}
-
-.post-type::after {
-  content: "\2002/\2002"
-}
 
 .case-study:nth-child(even) {
   width: 48%;
@@ -281,6 +223,54 @@
         height: 300px;
       }
   }
+}
+
+.post-image {
+  background: #f4f4f4;
+}
+
+@include media-query($on-palm) {
+  .intro {
+    margin: 120px 0 40px 0;
+  }
+}
+
+.post-link {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.labeling {
+  color: $grey-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: $second-font-family;
+  font-weight: 300;
+  padding-top: $spacing-unit / 8 * 3;
+  display: inline-block;
+  width: 100%;
+}
+
+.number::before {
+  content: "0";
+}
+
+.number::after {
+  content: "."
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.post-type::after {
+  content: "\2002/\2002"
 }
 
 .about {
