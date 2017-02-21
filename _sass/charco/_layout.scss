@@ -96,7 +96,6 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
 }
 
@@ -185,13 +184,10 @@
 }
 
 .post-link {
-  display: block;
   font-size: 24px;
   color: #333;
   text-decoration: none;
-  float: left;
   box-shadow: none;
-  clear: both;
 }
 
 .labeling {
@@ -206,7 +202,7 @@
 
 .number-left {
   width: 10%;
-  float: left;
+  // float: left;
 }
 
 .number::before {
@@ -219,19 +215,19 @@
 
 .labels-right {
   width: 90%;
-  float: left;
+  // float: left;
 }
 
-.post-type {
+.float-right {
   float: right;
+}
+
+.float-left {
+  float: left;
 }
 
 .post-type::after {
   content: "\2002/\2002"
-}
-
-.case-study-time {
-  float: right;
 }
 
 .case-study:nth-child(even) {
@@ -277,6 +273,10 @@
 .page-heading {
   font-size: 16px;
   padding-top: $spacing-unit * 2;
+}
+
+.page-heading::before {
+  content: "/";
 }
 
 .post-list {

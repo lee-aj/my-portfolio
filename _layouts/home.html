@@ -8,7 +8,7 @@ layout: default
 
   <!-- <p class="tag">What I do: UI / UX / Information Architecture / Design Systems / Prototyping / Mobile / and more...</p> -->
 
-  <h2 class="page-heading" id="case-studies">/Case Studies</h2>
+  <h2 class="page-heading" id="case-studies">Case Studies</h2>
 
   {{ content }}
 
@@ -17,13 +17,13 @@ layout: default
       <li class="case-study">
         <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
         <div class="post-image"></div>
-        <div class=labeling>
-          <div class="number-left">
-            <div class="number">{{ post.number }}</div>
+        <div class="labeling">
+          <div class="number-left float-left">
+            <div class="number float-left">{{ post.number }}</div>
           </div>
-          <div class="labels-right">
-            <div class="case-study-time">{{ post.time }}</div>
-            <div class="post-type">{{ post.type }}</div>
+          <div class="labels-right float-left">
+            <div class="float-right">{{ post.time }}</div>
+            <div class="post-type float-right">{{ post.type }}</div>
           </div>
         </div>
         <h1>
@@ -33,8 +33,11 @@ layout: default
     {% endfor %}
   </ul>
 
-  <h2 class="page-heading" id="about">/About</h2>
-
-  <h2>{{ site.title | escape }}</h2>
+  <h2 class="page-heading" id="about">About</h2>
+  <div class="labeling">
+    <p>{{ site.title | escape }}</p>
+    <p><a href="mailto:{{ site.email }}?Subject=Hello">{{ site.email | escape }}</a></p>
+    <p><a>CV</a></p>
+  </div>
 
 </div>
