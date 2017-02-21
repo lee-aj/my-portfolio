@@ -15,16 +15,11 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li class="case-study">
-        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
         <div class="post-image"></div>
         <div class="labeling">
-          <div class="number-left float-left">
-            <div class="number float-left">{{ post.number }}</div>
-          </div>
-          <div class="labels-right float-left">
-            <div class="float-right">{{ post.time }}</div>
-            <div class="post-type float-right">{{ post.type }}</div>
-          </div>
+          <div class="number float-left">{{ post.number }}</div>
+          <div class="float-right">{{ post.time }}</div>
+          <div class="post-type float-right">{{ post.type }}</div>
         </div>
         <h1>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
@@ -34,7 +29,7 @@ layout: default
   </ul>
 
   <h2 class="page-heading" id="about">About</h2>
-  <div class="labeling">
+  <div class="about">
     <p>{{ site.title | escape }}</p>
     <p><a href="mailto:{{ site.email }}?Subject=Hello">{{ site.email | escape }}</a></p>
     <p><a>CV</a></p>
